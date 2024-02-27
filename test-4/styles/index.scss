@@ -314,4 +314,83 @@
     }
 
     //  COMMUNITY UPDATES
+    .community-updates{
+        margin: 15px 144px;
+        padding: 15px 24px;
+        text-align: center;
+        h1{
+            @include fontDesc(36px,44px,600,$secondary);
+        }
+        p{
+            @include fontDesc(16px,24px,400,$tertiary);
+            margin: 20px 0;
+        }
+
+        .row{
+            @include flexProperties();
+            align-items: flex-start;
+            gap: 20px;
+            .col-md-3{
+                @include flexProperties(column,space-around,center);
+                align-items: center;
+                img{
+                    max-width: 368px;
+                }
+                .content{
+                    box-shadow: 0px 8px 16px 0px #ABBED166;
+                    border-radius: 8px;
+                    padding: 16px;
+                    gap: 16px;
+                    z-index: 3;
+                    background: $silver;
+                    max-width: 300px;
+                    transform: translateY(-80px);
+                    position: relative;
+                    h4{
+                        @include fontDesc(20px,28px,600,$tertiary);
+                        margin-bottom: 20px;
+                        max-width: 285px;
+                    }
+
+                    a{
+                        @include fontDesc(20px,28px,600,$primary);
+
+                        img{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//      FOOTER
+#footer{
+    background-color: $silver;
+    .container{
+        margin: 15px 144px;
+        padding: 15px 24px;
+        .row1{
+            text-align: center;
+            h1{
+                @include fontDesc(64px,76px,600,#263238);
+            }
+
+            button{
+                margin: 20px 0;
+                padding: 14px 32px;
+                border-radius: 4px;
+                border: none;
+                background: $primary;
+                @include fontDesc(16px,24px,500,#fff);
+                gap: 20px;
+                img{
+                    margin-bottom: 1px;
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
 }

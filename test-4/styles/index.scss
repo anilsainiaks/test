@@ -369,26 +369,101 @@
 //      FOOTER
 #footer{
     background-color: $silver;
-    .container{
+    margin-bottom: 0;
+    .container-top{
         margin: 15px 144px;
         padding: 15px 24px;
-        .row1{
+        .row{
+            @include flexProperties(column,flex-start,center);
             text-align: center;
             h1{
                 @include fontDesc(64px,76px,600,#263238);
             }
 
             button{
+                @include flexProperties(row,center,center);
+                @include fontDesc(16px,24px,500,#fff);
                 margin: 20px 0;
                 padding: 14px 32px;
                 border-radius: 4px;
                 border: none;
                 background: $primary;
-                @include fontDesc(16px,24px,500,#fff);
-                gap: 20px;
+                gap: 5px;
+            }
+        }
+    }
+
+    .container-bottom{
+        background:#263238;
+        .row{
+            @include flexProperties();
+            margin: 15px 144px;
+            padding: 65px 24px;
+            margin-bottom: 0;
+            color:#fff;
+            .company-info{
+                @include flexProperties(column,flex-start,flex-start);
+                gap: 40px;
                 img{
-                    margin-bottom: 1px;
-                    margin-left: 2px;
+                    max-width: 200px;
+                }
+
+                .copyright{
+                    p{
+                        @include fontDesc(14px,20px,400,$silver);
+                    }
+                }
+
+                .social-icons{
+                    @include flexProperties();
+                    justify-content: flex-start;
+                    gap: 16px;
+                }
+            }
+
+            .links{
+                @include flexProperties(row,space-between,flex-start);
+                gap: 40px;
+                max-width: 650px;
+
+                .col-md-2{
+                    @include flexProperties(column,space-between,flex-start);
+                    gap: 24px;
+
+                    h2{
+                        @include fontDesc(20px,28px,600,#fff);
+                    }
+
+                    ul{
+                        @include flexProperties(column,space-between,flex-start);
+                        gap: 12px;
+
+                        li{
+                            @include fontDesc(14px,20px,400,$silver);
+                        }
+                    }
+                }
+
+                .col3{
+                    .newsletter{
+                        background: rgba(255,255,255,0.2);
+                        border-radius: 8px;
+                        @include flexProperties(row,space-around,center);
+                        input{
+                            max-width: 70%;
+                            border:none;
+                            padding: 12px 8px;
+                            background: transparent;
+
+                            &::placeholder{
+                                @include fontDesc(14px,20px,400,#D9DBE1);
+                            }
+                        }
+
+                        img{
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }

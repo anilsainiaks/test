@@ -1,0 +1,36 @@
+// COLORS
+$primary:#4CAF4F;
+$secondary:#4D4D4D;
+$tertiary:#717171;
+$info:#2194f3;
+$silver:#F5F7FA;
+$gray:#18191F;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter',sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+ul{
+    list-style: none;
+}
+
+@mixin flexProperties($flex-direction:row,$justify-content:space-between,$align-items:center){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin fontDesc($font-size,$line-height,$font-weight,$color){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $color;
+}

@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  background: #F5F7FA;
+}
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 144px;
+  padding: 30px 0;
+}
+.navbar .container .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.navbar .container .nav-links li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #18191F;
+}
+.navbar .container .nav-links li .active {
+  font-weight: 500;
+}
+.navbar .container .getStarted button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.navbar .container .getStarted .loginButton {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4CAF4F;
+  background: transparent;
+}
+.navbar .container .getStarted .signUpButton {
+  background: #4CAF4F;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+#home .hero {
+  background: #F5F7FA;
+}
+#home .hero .slick-dots {
+  background: #F5F7FA;
+}
+#home .hero .slick-dots button::before {
+  color: #4CAF4F;
+  font-size: 10px;
+}
+#home .hero .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 144px;
+  padding: 80px 24px;
+  gap: 100px;
+}
+#home .hero .row img {
+  max-width: 350px;
+  height: auto;
+}
+#home .hero .row .lhs {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+#home .hero .row .lhs h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 76px;
+  color: #4CAF4F;
+}
+#home .hero .row .lhs h1 span {
+  color: #18191F;
+}
+#home .hero .row .lhs p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #717171;
+  margin: 10px 0;
+}
+#home .hero .row .lhs button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  padding: 14px 32px;
+  margin-top: 20px;
+  background: #4CAF4F;
+  border-radius: 4px;
+  border: none;
+}
+#home .clients {
+  margin: 15px 144px;
+  padding: 80px 24px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+#home .clients h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #4D4D4D;
+  margin-bottom: 20px;
+}
+#home .clients p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #717171;
+  margin-bottom: 20px;
+}
+#home .clients .clientImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#home .clients .clientImages img {
+  border-radius: 8px;
+}
+#home .community {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 144px;
+  text-align: center;
+}
+#home .community h1 {
+  max-width: 600px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #4D4D4D;
+}
+#home .community p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #717171;
+}
+#home .community .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+}
+#home .community .row .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 299px;
+  border-radius: 8px;
+}
+#home .community .row .col-md-3 img {
+  max-width: 65px;
+}
+#home .community .row .col-md-3 h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #4D4D4D;
+  max-width: 230px;
+}
+#home .community .row .col-md-3 p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #717171;
+}
+
+#body .unlock {
+  margin: 15px 144px;
+  padding: 0 24px;
+}
+#body .unlock .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+#body .unlock .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+#body .unlock .row .col h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #4D4D4D;
+}
+#body .unlock .row .col p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #717171;
+}
+#body .unlock .row button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 14px 32px;
+  border-radius: 4px;
+  background: #4CAF4F;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: none;
+  color: #fff;
+}
+#body .achievements {
+  background: #F5F7FA;
+}
+#body .achievements .row {
+  margin: 15px 144px;
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#body .achievements .row .col1 h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #4D4D4D;
+}
+#body .achievements .row .col1 h2 span {
+  color: #4CAF4F;
+}
+#body .achievements .row .col1 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #18191F;
+}
+#body .achievements .row .col2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+#body .achievements .row .col2 .achievements-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+#body .achievements .row .col2 .achievements-grid img {
+  max-width: 32px;
+}
+#body .achievements .row .col2 .achievements-grid .numbers h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #4D4D4D;
+}
+#body .achievements .row .col2 .achievements-grid .numbers p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #717171;
+}
+#body .calendar {
+  margin: 15px 144px;
+  padding: 0 24px;
+}
+#body .calendar .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+#body .calendar .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+#body .calendar .row .col h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #4D4D4D;
+}
+#body .calendar .row .col p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #717171;
+}
+#body .calendar .row button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 14px 32px;
+  border-radius: 4px;
+  background: #4CAF4F;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: none;
+}
+#body .customers {
+  background: #F5F7FA;
+}
+#body .customers .row {
+  margin: 15px 144px;
+  padding: 15px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+#body .customers .row img {
+  max-width: 340px;
+}
+#body .customers .row .col {
+  display: block;
+  padding-top: 10px;
+}
+#body .customers .row .col p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #18191F;
+}
+#body .customers .row .col h3 {
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #4CAF4F;
+}
+#body .customers .row .col .company {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #89939E;
+}
+#body .customers .row .col .customer-img {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#body .customers .row .col .customer-img img {
+  max-width: 48px;
+}
+#body .customers .row .col .customer-img .all-customers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+#body .customers .row .col .customer-img .all-customers h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #4CAF4F;
+}/*# sourceMappingURL=index.css.map */

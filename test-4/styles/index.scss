@@ -103,7 +103,7 @@
     .clients{
         // @include flexProperties(column);
         // gap:10px;
-        margin: 15px 144px;
+        margin: 0 144px;
         padding: 80px 24px;
         display: block;
         text-align: center;
@@ -126,7 +126,7 @@
 
     .community{
         @include flexProperties(column);
-        margin: 15px 144px;
+        margin: 0 144px;
         padding: 0 24px;
         text-align: center;
         h1{
@@ -166,7 +166,7 @@
 //  BODY
 #body{
     .unlock{
-        margin: 15px 144px;
+        margin: 0 144px;
         padding: 0 24px;
         .row{
             @include flexProperties();
@@ -204,7 +204,7 @@
     .achievements{
         background: $silver;
         .row{
-        margin: 15px 144px;
+        margin: 0 144px;
         padding: 60px 24px;
             @include flexProperties(row,space-between,center);
             .col1{
@@ -248,7 +248,7 @@
 
     //  CALENDAR
     .calendar{
-        margin: 15px 144px;
+        margin: 0 144px;
         padding: 0 24px;
         .row{
             @include flexProperties();
@@ -285,7 +285,7 @@
     .customers{
         background: $silver;
         .row{
-            margin: 15px 144px;
+            margin: 0 144px;
             padding: 15px 24px;
             @include flexProperties(row,space-between,flex-start);
             gap:30px;
@@ -327,7 +327,7 @@
 
     //  COMMUNITY UPDATES
     .community-updates{
-        margin: 15px 144px;
+        margin: 0 144px;
         padding: 15px 24px;
         text-align: center;
         h1{
@@ -384,7 +384,7 @@
     background-color: $silver;
     margin-bottom: 0;
     .container-top{
-        margin: 15px 144px;
+        margin: 0 144px;
         padding: 15px 24px;
         .row{
             @include flexProperties(column,flex-start,center);
@@ -413,7 +413,7 @@
         }
         .row{
             @include flexProperties();
-            margin: 15px 144px;
+            margin: 0 144px;
             padding: 65px 24px;
             margin-bottom: 0;
             color:#fff;
@@ -523,7 +523,7 @@
             padding: 30px 5px;
             .row{
                 img{
-                    max-width: 250px !important;
+                    max-width: 100% !important;
                 }
             }
         }
@@ -549,6 +549,19 @@
             .row{
                 margin: 0;
             padding: 30px 5px;
+                img{
+                    width: 100%;
+                }
+                .col{
+                    .customer-img{
+                        .all-customers{
+                            flex-wrap: wrap;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
             }
         }
         .community-updates{
@@ -586,6 +599,12 @@
         .container-top{
             margin: 0;
             padding: 30px 5px;
+            .row{
+                h1{
+                    font-size: 28px !important;
+                    line-height: 38px !important;
+                }
+            }
         }
         .container-bottom{
             .row{
@@ -599,6 +618,19 @@
                     flex-wrap: wrap;
                     align-items: center;
                     justify-content: center;
+                    .col3{
+                        margin: 0px auto;
+                        text-align: center;
+                        .newsletter{
+                            input{
+                                padding: 5px 4px;
+                                &::placeholder{
+                                    font-size: 10px;
+                                    line-height: 16px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

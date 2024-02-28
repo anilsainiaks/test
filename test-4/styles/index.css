@@ -132,7 +132,7 @@ ul {
   border: none;
 }
 #home .clients {
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 80px 24px;
   display: block;
   text-align: center;
@@ -165,7 +165,7 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 0 24px;
   text-align: center;
 }
@@ -218,7 +218,7 @@ ul {
 }
 
 #body .unlock {
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 0 24px;
 }
 #body .unlock .row {
@@ -265,7 +265,7 @@ ul {
   background: #F5F7FA;
 }
 #body .achievements .row {
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 60px 24px;
   display: flex;
   flex-direction: row;
@@ -316,7 +316,7 @@ ul {
   color: #717171;
 }
 #body .calendar {
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 0 24px;
 }
 #body .calendar .row {
@@ -365,7 +365,7 @@ ul {
   background: #F5F7FA;
 }
 #body .customers .row {
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 15px 24px;
   display: flex;
   flex-direction: row;
@@ -423,7 +423,7 @@ ul {
   color: #4CAF4F;
 }
 #body .community-updates {
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 15px 24px;
   text-align: center;
 }
@@ -493,7 +493,7 @@ ul {
   margin-bottom: 0;
 }
 #footer .container-top {
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 15px 24px;
 }
 #footer .container-top .row {
@@ -536,7 +536,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 144px;
+  margin: 0 144px;
   padding: 65px 24px;
   margin-bottom: 0;
   color: #fff;
@@ -657,7 +657,7 @@ ul {
     padding: 30px 5px;
   }
   #body .unlock .row img {
-    max-width: 250px !important;
+    max-width: 100% !important;
   }
   #body .achievements .row {
     margin: 0;
@@ -676,6 +676,15 @@ ul {
   #body .customers .row {
     margin: 0;
     padding: 30px 5px;
+  }
+  #body .customers .row img {
+    width: 100%;
+  }
+  #body .customers .row .col .customer-img .all-customers {
+    flex-wrap: wrap;
+  }
+  #body .customers .row .col .customer-img .all-customers img {
+    width: 100%;
   }
   #body .community-updates {
     margin: 0;
@@ -705,6 +714,10 @@ ul {
     margin: 0;
     padding: 30px 5px;
   }
+  #footer .container-top .row h1 {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
   #footer .container-bottom .row {
     margin: 0;
     padding: 30px 5px;
@@ -716,6 +729,21 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+  #footer .container-bottom .row .links .col3 {
+    margin: 0px auto;
+    text-align: center;
+  }
+  #footer .container-bottom .row .links .col3 .newsletter input {
+    padding: 5px 4px;
+  }
+  #footer .container-bottom .row .links .col3 .newsletter input::-moz-placeholder {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  #footer .container-bottom .row .links .col3 .newsletter input::placeholder {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 @media only screen and (max-width: 1200px) {

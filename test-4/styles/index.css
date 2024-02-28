@@ -6,7 +6,6 @@
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 ul {
@@ -21,17 +20,19 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin: 0px 144px;
-  padding: 30px 0;
+  padding: 30px 24px;
+  gap: 50px;
 }
 .navbar .container .nav-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
-.navbar .container .nav-links li {
+.navbar .container .nav-links li a {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -39,6 +40,12 @@ ul {
 }
 .navbar .container .nav-links li .active {
   font-weight: 500;
+}
+.navbar .container .getStarted {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .navbar .container .getStarted button {
   border: none;
@@ -61,6 +68,12 @@ ul {
   line-height: 20px;
   color: #ffffff;
 }
+.navbar .container .new-btn {
+  display: none;
+}
+.navbar .container .menubtn {
+  display: none;
+}
 
 #home .hero {
   background: #F5F7FA;
@@ -75,7 +88,7 @@ ul {
 #home .hero .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0px 144px;
   padding: 80px 24px;
@@ -122,7 +135,6 @@ ul {
   margin: 15px 144px;
   padding: 80px 24px;
   display: block;
-  align-items: center;
   text-align: center;
 }
 #home .clients h1 {
@@ -144,7 +156,6 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
 }
 #home .clients .clientImages img {
   border-radius: 8px;
@@ -155,6 +166,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin: 15px 144px;
+  padding: 0 24px;
   text-align: center;
 }
 #home .community h1 {
@@ -314,6 +326,9 @@ ul {
   align-items: center;
   gap: 40px;
 }
+#body .calendar .row img {
+  max-width: 500px;
+}
 #body .calendar .row .col {
   display: flex;
   flex-direction: column;
@@ -423,7 +438,8 @@ ul {
   font-weight: 400;
   line-height: 24px;
   color: #717171;
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 628px;
 }
 #body .community-updates .row {
   display: flex;
@@ -511,6 +527,9 @@ ul {
 }
 #footer .container-bottom {
   background: #263238;
+}
+#footer .container-bottom .mobile-view-logo {
+  display: none;
 }
 #footer .container-bottom .row {
   display: flex;
@@ -608,4 +627,715 @@ ul {
 }
 #footer .container-bottom .row .links .col3 .newsletter img {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar .container {
+    margin: 0;
+    padding: 30px 5px;
+    gap: 7px;
+  }
+  #home .hero .row {
+    margin: 0;
+    padding: 5px;
+    gap: 0px;
+    flex-wrap: wrap-reverse;
+  }
+  #home .clients {
+    margin: 0;
+    padding: 30px 5px;
+  }
+  #home .clients .clientImages {
+    flex-wrap: wrap;
+  }
+  #home .community {
+    margin: 0;
+    padding: 30px 5px;
+  }
+  #body .unlock {
+    margin: 0;
+    padding: 30px 5px;
+  }
+  #body .unlock .row img {
+    max-width: 250px !important;
+  }
+  #body .achievements .row {
+    margin: 0;
+    padding: 30px 5px;
+  }
+  #body .achievements .row .col2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #body .calendar {
+    margin: 0;
+    padding: 30px 5px;
+  }
+  #body .calendar .row img {
+    max-width: 150px;
+  }
+  #body .customers .row {
+    margin: 0;
+    padding: 30px 5px;
+  }
+  #body .community-updates {
+    margin: 0;
+    padding: 30px 5px;
+  }
+  #body .community-updates .row .col-md-3 img {
+    max-width: 200px;
+  }
+  #body .community-updates .row .col-md-3 .content {
+    max-width: 140px;
+    padding: 6px;
+    transform: translateY(-40px);
+  }
+  #body .community-updates .row .col-md-3 .content h4 {
+    font-size: 12px !important;
+    line-height: 16px !important;
+    margin-bottom: 0;
+  }
+  #body .community-updates .row .col-md-3 .content a {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+  #body .community-updates .row .col-md-3 .content a img {
+    margin-left: 0;
+  }
+  #footer .container-top {
+    margin: 0;
+    padding: 30px 5px;
+  }
+  #footer .container-bottom .row {
+    margin: 0;
+    padding: 30px 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .container-bottom .row .links {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navbar .container {
+    margin: 0;
+    padding: 30px 10px;
+    gap: 18px;
+  }
+  .navbar .container .nav-links {
+    gap: 15px;
+  }
+  #home .hero .row {
+    margin: 0px 108px;
+    padding: 60px 20px;
+  }
+  #home .hero .row .lhs h1 {
+    font-size: 60px;
+    line-height: 72px;
+  }
+  #home .clients {
+    margin: 0px 108px;
+    padding: 60px 20px;
+  }
+  #home .clients h1 {
+    font-size: 28px;
+    line-height: 72px;
+  }
+  #home .community {
+    margin: 0px 108px;
+    padding: 60px 20px;
+  }
+  #body .unlock {
+    margin: 0px 108px;
+    padding: 60px 20px;
+  }
+  #body .achievements .row {
+    margin: 0px 108px;
+    padding: 60px 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  #body .calendar {
+    margin: 0px 108px;
+    padding: 60px 20px;
+  }
+  #body .customers .row {
+    margin: 0px 108px;
+    padding: 60px 20px;
+    justify-content: center;
+  }
+  #body .customers .row .col .customer-img {
+    flex-wrap: wrap;
+  }
+  #body .customers .row .col .customer-img a {
+    width: 100%;
+  }
+  #body .customers .row .col .customer-img a .all-customers {
+    justify-content: center;
+  }
+  #body .community-updates {
+    margin: 0px 108px;
+    padding: 60px 20px;
+  }
+  #body .community-updates .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #footer .container-top {
+    margin: 0px 72px;
+    padding: 40px 16px;
+  }
+  #footer .container-top .row h1 {
+    font-size: 60px;
+    line-height: 72px;
+  }
+  #footer .container-bottom {
+    padding: 14px;
+  }
+  #footer .container-bottom .mobile-view-logo {
+    display: block;
+    margin: 0px auto;
+    padding: 40px 16px;
+    max-width: 200px;
+  }
+  #footer .container-bottom .row {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 14px;
+  }
+  #footer .container-bottom .row .company-info {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  #footer .container-bottom .row .company-info .web-view-logo {
+    display: none;
+  }
+  #footer .container-bottom .row .company-info .copyright {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  #footer .container-bottom .row .company-info .social-icons {
+    gap: 12px;
+    margin-top: 10px;
+  }
+  #footer .container-bottom .row .links {
+    justify-content: space-between;
+  }
+  #footer .container-bottom .row .links .col-md-2 h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #footer .container-bottom .row .links .col-md-2 ul {
+    gap: 9px;
+  }
+  #footer .container-bottom .row .links .col-md-2 ul li {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #footer .container-bottom .row .links col3 .newsletter input {
+    padding: 8px 6px;
+  }
+  #footer .container-bottom .row .links col3 .newsletter input::-moz-placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #footer .container-bottom .row .links col3 .newsletter input::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar .container {
+    margin: 0;
+    padding: 30px 10px;
+    gap: 15px;
+  }
+  .navbar .container .nav-links {
+    gap: 10px;
+  }
+  #home .hero .slick-dots button::before {
+    font-size: 8px;
+  }
+  #home .hero .row {
+    margin: 0px 72px;
+    padding: 40px 16px;
+  }
+  #home .hero .row .lhs h1 {
+    font-size: 56px;
+    line-height: 66px;
+  }
+  #home .clients {
+    margin: 0px 72px;
+    padding: 40px 16px;
+  }
+  #home .clients h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  #home .community h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  #home .community .row {
+    flex-wrap: wrap;
+  }
+  #home .community .row .col-md-3 h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  #home #body .unlock {
+    margin: 0px 72px;
+    padding: 40px 16px;
+  }
+  #home #body .unlock .row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #home #body .unlock .row .col h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  #home #body .achievements .row {
+    margin: 0px 72px;
+    padding: 40px 16px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #home #body .achievements .row .col1 h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  #home #body .calendar {
+    margin: 0px 72px;
+    padding: 40px 16px;
+  }
+  #home #body .customers .row {
+    margin: 0px 72px;
+    padding: 40px 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #home #body .customers .row .col .customer-img {
+    flex-wrap: wrap;
+  }
+  #home #body .customers .row .col .customer-img a {
+    width: 100%;
+  }
+  #home #body .customers .row .col .customer-img a .all-customers {
+    justify-content: center;
+  }
+  #home #body .community-updates {
+    margin: 0px 72px;
+    padding: 40px 16px;
+  }
+  #home #body .community-updates h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  #home #body .community-updates .row {
+    flex-wrap: wrap;
+  }
+  #home #footer .container-top {
+    margin: 0px 72px;
+    padding: 40px 16px;
+  }
+  #home #footer .container-top .row h1 {
+    font-size: 56px;
+    line-height: 66px;
+  }
+  #home #footer .container-bottom {
+    padding: 14px;
+  }
+  #home #footer .container-bottom .mobile-view-logo {
+    display: block;
+    margin: 5px auto;
+    padding: 10px 0;
+    max-width: 200px;
+  }
+  #home #footer .container-bottom .row {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 14px;
+  }
+  #home #footer .container-bottom .row .company-info {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  #home #footer .container-bottom .row .company-info .web-view-logo {
+    display: none;
+  }
+  #home #footer .container-bottom .row .company-info .copyright {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  #home #footer .container-bottom .row .company-info .social-icons {
+    gap: 12px;
+    margin-top: 10px;
+  }
+  #home #footer .container-bottom .row .links .col-md-2 h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #home #footer .container-bottom .row .links .col-md-2 ul {
+    gap: 9px;
+  }
+  #home #footer .container-bottom .row .links .col-md-2 ul li {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #home #footer .container-bottom .row .links col3 .newsletter input {
+    padding: 8px 6px;
+  }
+  #home #footer .container-bottom .row .links col3 .newsletter input::-moz-placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #home #footer .container-bottom .row .links col3 .newsletter input::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 992px) and (max-width: 800px) {
+  .navbar .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+    margin: 0;
+    padding: 25px 10px;
+  }
+  .navbar .container img {
+    max-width: 100px;
+  }
+  .navbar .container .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: -999px;
+    transition: all 1s ease;
+    padding-top: 20px;
+  }
+  .navbar .container .nav-links li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #18191F;
+  }
+  .navbar .container .nav-links li .active {
+    font-weight: 500;
+  }
+  .navbar .container .getStarted {
+    margin: 0;
+    margin-top: -999px;
+    transition: all 1s ease;
+  }
+  .navbar .container .getStarted button {
+    padding: 8px 14px;
+  }
+  .navbar .container .getStarted .loginButton {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #4CAF4F;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .navbar .container .getStarted .signUpButton {
+    background: #4CAF4F;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #fff;
+  }
+  .navbar .container .mobile-menu {
+    margin-top: 20px;
+    border-bottom-right-radius: 30%;
+  }
+  .navbar .container .new-btn {
+    display: block;
+  }
+  .navbar .container .new-btn .menubtn {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  #home .hero .slick-dots button::before {
+    font-size: 6px;
+  }
+  #home .hero .row {
+    margin: 0;
+    padding: 14px;
+    gap: 30px;
+  }
+  #home .hero .row img {
+    max-width: 200px;
+  }
+  #home .hero .row .lhs h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  #home .hero .row .lhs p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #home .hero .row .lhs button {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 22px;
+  }
+  #home .clients {
+    margin: 0;
+    padding: 14px;
+  }
+  #home .clients h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  #home .clients p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  #home .community {
+    margin: 0;
+    padding: 14px;
+  }
+  #home .community h1 {
+    max-width: 450px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #home .community p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #home .community .row {
+    flex-direction: column;
+  }
+  #body .unlock {
+    margin: 0;
+    padding: 14px;
+  }
+  #body .unlock .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  #body .unlock .row img {
+    max-width: 350px;
+  }
+  #body .unlock .row .col {
+    align-items: center;
+    gap: 10px;
+  }
+  #body .unlock .row .col h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #body .unlock .row .col p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #body .unlock .row button {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 24px;
+  }
+  #body .achievements .row {
+    margin: 0;
+    padding: 14px;
+    flex-direction: column;
+    text-align: center;
+  }
+  #body .achievements .row .col1 h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #body .achievements .row .col1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #body .achievements .row .col2 {
+    margin-top: 20px;
+    gap: 30px;
+  }
+  #body .achievements .row .col2 .achievements-grid img {
+    max-width: 28px;
+  }
+  #body .achievements .row .col2 .achievements-grid .numbers h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #body .achievements .row .col2 .achievements-grid .numbers p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #body .calendar {
+    margin: 0;
+    padding: 14px;
+  }
+  #body .calendar .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #body .calendar .row .col {
+    align-items: center;
+  }
+  #body .calendar .row .col h2 {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  #body .calendar .row .col p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #body .calendar .row button {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 24px;
+  }
+  #body .customers .row {
+    margin: 0;
+    padding: 14px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  #body .customers .row img {
+    max-width: 250px;
+  }
+  #body .customers .row .col p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #body .customers .row .col h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #body .customers .row .col .company {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #body .customers .row .col .customer-img {
+    flex-wrap: wrap;
+  }
+  #body .customers .row .col .customer-img a {
+    width: 100%;
+  }
+  #body .customers .row .col .customer-img a .all-customers {
+    justify-content: center;
+  }
+  #body .community-updates {
+    margin: 0;
+    padding: 14px;
+  }
+  #body .community-updates h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #body .community-updates p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 500px;
+  }
+  #body .community-updates .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  #body .community-updates .row .col-md-3 .content {
+    padding: 14px;
+  }
+  #body .community-updates .row .col-md-3 .content h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #body .community-updates .row .col-md-3 .content a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #footer .container-top {
+    margin: 0;
+    padding: 14px;
+  }
+  #footer .container-top .row h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  #footer .container-top .row button {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 28px;
+  }
+  #footer .container-bottom {
+    padding: 14px;
+  }
+  #footer .container-bottom .mobile-view-logo {
+    display: block;
+    margin: 5px auto;
+    padding: 10px 0;
+    max-width: 200px;
+  }
+  #footer .container-bottom .row {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 14px;
+  }
+  #footer .container-bottom .row .company-info {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  #footer .container-bottom .row .company-info .web-view-logo {
+    display: none;
+  }
+  #footer .container-bottom .row .company-info .copyright {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  #footer .container-bottom .row .company-info .social-icons {
+    gap: 12px;
+    margin-top: 10px;
+  }
+  #footer .container-bottom .row .links .col-md-2 h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #footer .container-bottom .row .links .col-md-2 ul {
+    gap: 9px;
+  }
+  #footer .container-bottom .row .links .col-md-2 ul li {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #footer .container-bottom .row .links col3 .newsletter input {
+    padding: 8px 6px;
+  }
+  #footer .container-bottom .row .links col3 .newsletter input::-moz-placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #footer .container-bottom .row .links col3 .newsletter input::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }/*# sourceMappingURL=index.css.map */

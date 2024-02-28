@@ -14,7 +14,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <script src="./scripts.js" type="text/javascript"></script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./scripts.js"></script>
 </head>
 <body>
 
@@ -34,11 +36,12 @@
                 <button class="loginButton">Login</button>
                 <button class="signUpButton">Sign up</button>
             </div>
+            <button onclick="toggleMenu()" aria-hidden="true" class="new-btn"><i class="fa-solid  fa-bars menubtn" ></i></button>
         </div>
     </nav>
 
 
-    <!-----------------HOME ------------------------>
+    <!-- ---------------HOME ------------ -->
     <section id="home">
         <div class="container hero single-item">
             <div class="row">
@@ -115,7 +118,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
 
     <!--------BODY ------------->
@@ -238,7 +241,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <!---------FOOTER ----------->
     <section id="footer">
@@ -251,9 +254,10 @@
 
         <!------footer bottom  -->
         <div class="container container-bottom">
+            <img src="./images/logo_white.png" alt="" class="mobile-view-logo">
             <div class="row">
                 <div class="col-md-4 company-info">
-                    <img src="./images/logo_white.png" alt="">
+                    <img src="./images/logo_white.png" class="web-view-logo" alt="">
                     <div class="copyright">
                         <p>Copyright © 2020 Nexcent ltd.</p>
                     <p>All rights reserved</p>
@@ -308,6 +312,6 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
-<script src="./scripts.js"></script>
+<!-- <script src="./scripts.js"></script> -->
 </body>
 </html>

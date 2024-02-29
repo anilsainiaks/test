@@ -34,3 +34,18 @@ ul{
     line-height: $line-height;
     color: $color;
 }
+
+%title-sec{
+    h2{
+        font-size:36px ;
+        line-height: 44px;
+        font-weight: 600;
+        color: $secondary;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $tertiary;
+    }
+}

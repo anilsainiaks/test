@@ -130,6 +130,7 @@ ul {
   background: #4CAF4F;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 #home .clients {
   margin: 0 144px;
@@ -247,6 +248,9 @@ ul {
   line-height: 20px;
   color: #717171;
 }
+#body .unlock .row .col button {
+  cursor: pointer;
+}
 #body .unlock .row button {
   font-size: 16px;
   font-weight: 500;
@@ -360,6 +364,7 @@ ul {
   border-radius: 4px;
   margin-top: 10px;
   border: none;
+  cursor: pointer;
 }
 #body .customers {
   background: #F5F7FA;
@@ -524,6 +529,7 @@ ul {
   border: none;
   background: #4CAF4F;
   gap: 5px;
+  cursor: pointer;
 }
 #footer .container-bottom {
   background: #263238;
@@ -564,6 +570,7 @@ ul {
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
+  cursor: pointer;
 }
 #footer .container-bottom .row .links {
   display: flex;
@@ -579,6 +586,9 @@ ul {
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
+}
+#footer .container-bottom .row .links .col-md-2 ul li {
+  cursor: pointer;
 }
 #footer .container-bottom .row .links .col-md-2 h2 {
   font-size: 20px;

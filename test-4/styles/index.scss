@@ -95,6 +95,7 @@
                     background: $primary;
                     border-radius: 4px;
                     border: none;
+                    cursor: pointer;
                 }
             }
         }
@@ -183,6 +184,9 @@
     
                 p{
                     @include fontDesc(14px,20px,400,$tertiary);
+                }
+                button{
+                    cursor: pointer;
                 }
             }
 
@@ -278,6 +282,7 @@
                 border-radius: 4px;
                 margin-top: 10px;
                 border: none;
+                cursor: pointer;
             }
         }
     }   
@@ -402,6 +407,7 @@
                 border: none;
                 background: $primary;
                 gap: 5px;
+                cursor: pointer;
             }
         }
     }
@@ -434,6 +440,7 @@
                     @include flexProperties();
                     justify-content: flex-start;
                     gap: 16px;
+                    cursor: pointer;
                 }
             }
 
@@ -445,6 +452,11 @@
                 .col-md-2{
                     @include flexProperties(column,space-between,flex-start);
                     gap: 24px;
+                    ul{
+                        li{
+                            cursor: pointer;
+                        }
+                    }
 
                     h2{
                         @include fontDesc(20px,28px,600,#fff);
@@ -509,6 +521,7 @@
             padding: 30px 5px;
             .clientImages{
                 flex-wrap: wrap;
+                
             }
         }
         .community{

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:wght@100..900&family=Roboto:wght@300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./images/logo.png" class="img-fluid" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse links justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav lhs">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Tour</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Destination</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Activities</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav rhs">
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  USD
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">INR</a></li>
+                                  <li><a class="dropdown-item" href="#">YEN</a></li>
+                                  <li></li>
+                                  <li><a class="dropdown-item" href="#">EURO</a></li>
+                                </ul>
+                              </li>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn">Log in</button>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <div class="headerBody d-flex flex-column text-center">
+                <h1>Life Is Adventure Make <br>The Best Of It</h1>
+              <div class="featureList searchform rounded-pill">
+                <form action="">
+                    <div class="row d-flex align-items-center">
+                        <div class="form-group col-lg col-md d-flex align-items-center">
+                            <div class="form-icon rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-map"></i>
+                            </div>
+                            <div class="form-field content">
+                                <label for="inputDestination">Where</label>
+                                <input type="text" class="form-control form-control-sm" id="inputDestination"
+                                    placeholder="search destinations">
+                            </div>
+                        </div>
+                        <div class="form-group col-lg col-md d-flex align-items-center">
+                            <div class="form-icon rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="fa-regular fa-calendar-days"></i>
+                            </div> 
+                            <div class="form-field content">
+                                <label for="inputDates">When</label>
+                                <input type="date" class="form-control form-control-sm" id="inputDates"
+                                    placeholder="February 05 ~ March 14">
+                            </div>
+                        </div>
+                        <div class="form-group col-lg col-md d-flex align-items-center ">
+                            <div class="form-icon rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-map"></i>
+                            </div>
+                            <div class="form-field content">
+                                <label for="inputtourtype">Tour Type</label>
+                                <input type="text" class="form-control form-control-sm" id="inputtourtype"
+                                    placeholder="All Tour">
+                            </div>
+                        </div>
+                        <button type="submit" class="form-button search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+              </div>
+        </div>
+    </header>
+
+    <!-- trending sections -->
+    <section class="trending">
+        <div class="container">
+            <div class="title-sec">
+                <h2>Trending Destinations</h2>
+                <a href="#">See all</a>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-xl-6 row-cols-md-3 row-cols-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/trending1.png" class="card-img-top" alt="  ">
+                        <div class="card-body">
+                            <h5 class="card-title">Cruises</h5>
+                          </a>
+                          <p class="card-text">100+ Tours</p>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/trending2.png" class="card-img-top" alt="  ">
+                        <div class="card-body">
+                          <h5 class="card-title">Beach Tours</h5>
+                          <p class="card-text">100+ Tours</p>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                      </div>
+                </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="./images/trending3.png" class="card-img-top" alt="  ">
+                        <div class="card-body">
+                          <h5 class="card-title">City Tours</h5>
+                          <p class="card-text">100+ Tours</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="./images/trending4.png" class="card-img-top" alt="  ">
+                        <div class="card-body">
+                          <h5 class="card-title">Museum Tour</h5>
+                          <p class="card-text">100+ Tours</p>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="./images/trending5.png" class="card-img-top" alt="  ">
+                        <div class="card-body">
+                          <h5 class="card-title">Food</h5>
+                          <p class="card-text">100+ Tours</p>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="./images/trending6.png" class="card-img-top" alt="  ">
+                        <div class="card-body">
+                          <h5 class="card-title">Hiking</h5>
+                          <p class="card-text">100+ Tours</p>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- why choose tourz -->
+    <section class="tourz">
+        <div class="container">
+            <div class="title-sec">
+                <h2>Why choose Tourz</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <img src="./images/tourz1.png" alt="">
+                    <h3>Ultimate flexibility</h3>
+                    <p>You're in control, with free
+                        cancellation and payment options to
+                        satisfy any plan or budget.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="./images/tourz2.png" alt="">
+                    <h3>Memorable experiences</h3>
+                    <p>Browse and book tours and activities
+                        so incredible, you'll want to tell your
+                        friends.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="./images/tourz3.png" alt="">
+                    <h3>Quality at our core</h3>
+                    <p>High-quality standards. Millions of
+                        reviews. A tourz company.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="./images/tourz4.png" alt="">
+                    <h3>Award-winning support</h3>
+                    <p>New price? New plan? No problem.
+                        We're here to help, 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured trips -->
+    <section class="featuredTrips">
+        <div class="container">
+            <div class="title-sec">
+                <h2>Featured Trips</h2>
+                <a href="#">See all</a>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-4 row-cols-sm-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/featuredTrips1.png" alt="" class="card-img-top">
+                        <div class="card-img-overlay">
+                            <div class="sendIcon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted"><i class="icon fa-solid fa-location-dot"></i>Paris, France</small></p>
+                            <h5 class="card-title">Centipede Tour - Guided Arizona
+                                Desert Tour by ATV</h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star icon"></i>
+                                4.8 (243)</p>
+                            <div class="card-footer">
+                                <p class="lhs"><i class="icon fa-solid fa-calendar-days"></i>4 days</p>
+                                <a href="#" class="stretched-link"></a>
+                                <p class="rhs">
+                                    From <span>$189.25</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/featuredTrips2.png" alt="" class="card-img-top">
+                        <div class="card-img-overlay">
+                            <div class="sendIcon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted"><i class="icon fa-solid fa-location-dot"></i>New York, USA</small></p>
+                            <h5 class="card-title">Molokini and Turtle Town
+                                Snorkeling Adventure Aboard</h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star icon"></i>
+                                4.8 (243)</p>
+                            <div class="card-footer">
+                                <p class="lhs"><i class="icon fa-solid fa-calendar-days"></i>4 days</p>
+                                <a href="#" class="stretched-link"></a>
+                                <p class="rhs">
+                                    From <span>$225</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/featuredTrips3.png" alt="" class="card-img-top">
+                        <div class="card-img-overlay">
+                            <div class="sendIcon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted"><i class="icon fa-solid fa-location-dot"></i>London, UK</small></p>
+                            <h5 class="card-title">Westminster Walking Tour &
+                                Westminster Abbey Entry</h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star icon"></i>
+                                4.8 (243)</p>
+                            <div class="card-footer">
+                                <p class="lhs"><i class="icon fa-solid fa-calendar-days"></i>4 days</p>
+                                <a href="#" class="stretched-link"></a>
+                                <p class="rhs">
+                                    From <span>$943</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/featuredTrips4.png" alt="" class="card-img-top">
+                        <div class="card-img-overlay">
+                            <div class="sendIcon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted"><i class="icon fa-solid fa-location-dot"></i>New York, USA</small></p>
+                            <h5 class="card-title">All Inclusive Ultimate Circle Island
+                                Day Tour with Lunch</h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star icon"></i>
+                                4.8 (243)</p>
+                            <div class="card-footer">
+                                <p class="lhs"><i class="icon fa-solid fa-calendar-days"></i>4 days</p>
+                                <a href="#" class="stretched-link"></a>
+                                <p class="rhs">
+                                    From <span>$771</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/featuredTrips5.png" alt="" class="card-img-top">
+                        <div class="card-img-overlay">
+                            <div class="sendIcon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted"><i class="icon fa-solid fa-location-dot"></i>Paris, France</small></p>
+                            <h5 class="card-title">Space Center Houston Admission
+                                Ticket</h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star icon"></i>
+                                4.8 (243)</p>
+                            <div class="card-footer">
+                                <p class="lhs"><i class="icon fa-solid fa-calendar-days"></i>4 days</p>
+                                <a href="#" class="stretched-link"></a>
+                                <p class="rhs">
+                                    From <span>$189.25</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/featuredTrips6.png" alt="" class="card-img-top">
+                        <div class="card-img-overlay">
+                            <div class="sendIcon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted"><i class="icon fa-solid fa-location-dot"></i>New York, USA</small></p>
+                            <h5 class="card-title">Clear Kayak Tour of Shell Key Preserve </h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star icon"></i>
+                                4.8 (243)</p>
+                            <div class="card-footer">
+                                <p class="lhs"><i class="icon fa-solid fa-calendar-days"></i>4 days</p>
+                                <a href="#" class="stretched-link"></a>
+                                <p class="rhs">
+                                    From <span>$225</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/featuredTrips7.png" alt="" class="card-img-top">
+                        <div class="card-img-overlay">
+                            <div class="sendIcon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted"><i class="icon fa-solid fa-location-dot"></i>London, UK</small></p>
+                            <h5 class="card-title">History and Hauntings of Salem Guided </h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star icon"></i>
+                                4.8 (243)</p>
+                            <div class="card-footer">
+                                <p class="lhs"><i class="icon fa-solid fa-calendar-days"></i>4 days</p>
+                                <a href="#" class="stretched-link"></a>
+                                <p class="rhs">
+                                    From <span>$943</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/featuredTrips8.png" alt="" class="card-img-top">
+                        <div class="card-img-overlay">
+                            <div class="sendIcon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted"><i class="icon fa-solid fa-location-dot"></i>New York, USA</small></p>
+                            <h5 class="card-title">Mauna Kea Summit and Stars Free Astro Photos </h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star icon"></i>
+                                4.8 (243)</p>
+                            <div class="card-footer">
+                                <p class="lhs"><i class="icon fa-solid fa-calendar-days"></i>4 days</p>
+                                <a href="#" class="stretched-link"></a>
+                                <p class="rhs">
+                                    From <span>$771</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Destinations -->
+    <section class="trendingDestinations">
+        <div class="container">
+            <div class="title-sec">
+                <h2>Trending Destinations</h2>
+                <a href="#">See all</a>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/destinations1.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="text">
+                                <h5 class="card-title">Bali</h5>
+                            <p class="card-text">100+ Tours</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/destinations2.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="text">
+                                <h5 class="card-title">Rome</h5>
+                            <p class="card-text">100+ Tours</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/destinations3.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="text">
+                                <h5 class="card-title">Phuket</h5>
+                            <p class="card-text">100+ Tours</p>
+                        </div>
+                        <a href="#" class="stretched-link" aria-hidden="true"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./images/destinations4.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="text">
+                                <h5 class="card-title">Paris</h5>
+                            <p class="card-text">100+ Tours</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- customer Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <div class="content">
+                <div class="title-sec">
+                    <h2>Customer Reviews</h2>
+                </div>
+                <img src="./images/review.png" alt="" class="img-fluid">
+                <div class="row">
+                    <p class="review">The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!</p>
+                    <h5 class="reviewBy">Ali Tufan</h5>
+                    <h6 class="post">Product Manager, Apple Inc.</h6>
+                </div>
+                <div class="customers list-group">
+                    <div class="iconDiv">
+                        <img src="./images/customer1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="iconDiv">
+                        <img src="./images/customer2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="iconDiv">
+                        <img src="./images/customer3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="iconDiv">
+                        <img src="./images/customer4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="iconDiv">
+                        <img src="./images/customer5.png" alt="" class="img-fluid">
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Articles -->
+    <section class="travelArticles">
+        <div class="container">
+            <div class="title-sec">
+                <h2>Travel Articles</h2>
+                <a href="#">See all</a>
+            </div>
+           <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 justify-content-center">
+            <div class="col">
+                <div class="card">
+                    <img src="./images/articles1.png" alt="" class="card-img-top">
+                    <div class="card-img-overlay">
+                        <div class="label"><p>Trips</p></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><small class="text-muted">
+                            <span class="date">April 06 2023</span>
+                            <span class="author">By Ali Tufan</span>
+                        </small></p>
+                        <h5 class="card-title">Kenya vs Tanzania Safari: The Better African Safari Experience</h5>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/articles2.png" alt="" class="card-img-top">
+                    <div class="card-img-overlay">
+                        <div class="label"><p>Trips</p></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><small class="text-muted">
+                            <span class="date">April 07 2023</span>
+                            <span class="author">By Emily Johnson</span>
+                        </small></p>
+                        <h5 class="card-title">Exploring the Serengeti: A Wildlife Adventure</h5>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/articles3.png" alt="" class="card-img-top">
+                    <div class="card-img-overlay">
+                        <div class="label"><p>Trips</p></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><small class="text-muted">
+                            <span class="date">April 08 2023</span>
+                            <span class="author">By Maxwell Rhodes</span>
+                        </small></p>
+                        <h5 class="card-title">Into the Wild: An Unforgettable Safari Journey</h5>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- offer -->
+    <section class="offer">
+        <div class="container">
+            <div class="row">
+            <img src="./images/offer.png" alt="" class="img-fluid">
+            <div class="col-md-4 content">
+                <h2>Get 5% off your 1st app booking</h2>
+                <p>Booking's better on the app. Use promo code "TourBooking" to save!</p>
+                <p class="subscribe-info">Get a magic link sent to your email</p>
+                <div class="subscribe">
+                    <input type="text" placeholder="Email">
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+       <div class="divider">
+        <div class="container">
+            <div class="footer-top row justify-content-between">
+                <div class="col-lg-6 col-sm-4 col">
+                    <h4><i class="fa-solid fa-phone"></i>Speak to our expert at <span>1-800-453-6744</span></h4>
+                </div>
+                <div class="col-lg-3 col-sm-4 followUs">
+                    <p class="d-flex align-items-center">
+                        <span>Follow us</span>
+                    <a href="#"><i class="fa-brands fa-facebook text-light"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter text-light"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-light"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin text-light"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+       </div>
+        <div class="divider">
+            <div class="container">
+                <div class="footer-middle">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 contact">
+                            <h3>Contact</h3>
+                            <address>328 Queensberry Street, North Melbourne VIC3051, Australia.</address>
+                            <a href="mailto:hi@viatours.com">hi@viatours.com</a>
+                        </div>
+                        <div class="col-lg-2 col-md-5 company">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Tourz Reviews</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Travel Guides</a></li>
+                                <li><a href="#">Data Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Legal</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 support">
+                            <h3>Support</h3>
+                            <ul>
+                                <li><a href="#">Get in Touch</a></li>
+                                <li><a href="#">Help center</a></li>
+                                <li><a href="#">Live chat</a></li>
+                                <li><a href="#">How it works</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-5 news">
+                            <h3>NewsLetter</h3>
+                            <p>Subscribe to the free newsletter and stay up to date</p>
+                            <div class="newsletter d-flex justify-content-between">
+                                <input type="text" placeholder="Your email address">
+                                <button class="btn">Send</button>
+                            </div>
+                            <h3>Mobile Apps</h3>
+                            <ul>
+                                <li><a href="#">iOS App</a></li>
+                                <li><a href="#">Android App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider">
+            <div class="container">
+                <div class="footer-bottom d-flex justify-content-between">
+                    <h6>&#169;  Copyright Viatours 2024</h6>
+                    <ul class="paymentImg d-flex justify-content-between">
+                        <li><img src="./images/footer1.png" alt="" class="img-fluid"></li>
+                        <li><img src="./images/footer2.png" alt="" class="img-fluid"></li>
+                        <li><img src="./images/footer3.png" alt="" class="img-fluid"></li>
+                        <li><img src="./images/footer4.png" alt="" class="img-fluid"></li>
+                        <li><img src="./images/footer5.png" alt="" class="img-fluid"></li>
+                        <li><img src="./images/footer6.png" alt="" class="img-fluid"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

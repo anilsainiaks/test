@@ -1,0 +1,784 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+footer .container .footer-middle a, footer .container .footer-top .followUs p a, header .container nav .container-fluid .links .rhs li a, header .container nav .container-fluid .links .lhs li a, .travelArticles .container .title-sec a, .reviews .container .content .title-sec a, .trendingDestinations .container .title-sec a, .featuredTrips .container .title-sec a, .tourz .container .title-sec a, .trending .container .title-sec a {
+  text-decoration: none;
+  color: #05073C;
+  transition: 0.5s ease-in-out;
+}
+footer .container .footer-middle a:hover, footer .container .footer-top .followUs p a:hover, header .container nav .container-fluid .links .rhs li a:hover, header .container nav .container-fluid .links .lhs li a:hover, .travelArticles .container .title-sec a:hover, .reviews .container .content .title-sec a:hover, .trendingDestinations .container .title-sec a:hover, .featuredTrips .container .title-sec a:hover, .tourz .container .title-sec a:hover, .trending .container .title-sec a:hover {
+  color: #EB662B;
+}
+
+ul {
+  list-style: none;
+}
+
+.travelArticles .container .title-sec, .trendingDestinations .container .title-sec, .featuredTrips .container .title-sec, .trending .container .title-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travelArticles .container .title-sec h2, .reviews .container .content .title-sec h2, .trendingDestinations .container .title-sec h2, .featuredTrips .container .title-sec h2, .tourz .container .title-sec h2, .trending .container .title-sec h2 {
+  font-size: 29px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #05073C;
+}
+.travelArticles .container .title-sec a, .reviews .container .content .title-sec a, .trendingDestinations .container .title-sec a, .featuredTrips .container .title-sec a, .tourz .container .title-sec a, .trending .container .title-sec a {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #05073C;
+}
+
+section {
+  padding: 120px 0;
+}
+
+header {
+  background-image: url("../images/bg.png");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+header .container nav .container-fluid .links {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #05073C;
+}
+header .container nav .container-fluid .links .lhs {
+  gap: 15px;
+}
+header .container nav .container-fluid .links .rhs {
+  gap: 15px;
+}
+header .container nav .container-fluid .links .rhs button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #05073C;
+  border: 1px solid #05073C;
+  border-radius: 200px;
+  transition: 0.5s ease-in-out;
+}
+header .container nav .container-fluid .links .rhs button:hover {
+  color: #ffffff;
+  background: #EB662B;
+  border: 1px solid transparent;
+}
+header .container .headerBody {
+  gap: 20px;
+}
+header .container .headerBody h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  color: black;
+  background: linear-gradient(90.84deg, #EE8C61 27.01%, #4C43C4 87.3%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-top: 60px;
+}
+header .container .headerBody .featureList {
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.0509803922);
+}
+header .container .headerBody .featureList form .row {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 5px 20px;
+}
+header .container .headerBody .featureList form .row .search {
+  background: #EB662B;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  padding: 0;
+}
+header .container .headerBody .featureList form .row .form-group {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .container .headerBody .featureList form .row .form-group .form-icon {
+  background: rgba(235, 102, 43, 0.0509803922);
+  min-width: 50px;
+  min-height: 50px;
+}
+header .container .headerBody .featureList form .row .form-group .content label {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #05073C;
+  padding-left: 8px;
+  text-align: left;
+}
+header .container .headerBody .featureList form .row .form-group .content input {
+  border: none;
+}
+header .container .headerBody .featureList form .row .form-group .content input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #717171;
+}
+header .container .headerBody .featureList form .row .form-group .content input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #717171;
+}
+header .container .headerBody .featureList form .row .form-group .content input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.trending .container .title-sec {
+  padding: 10px 0;
+}
+.trending .container .row .col .card {
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+.trending .container .row .col .card:hover {
+  transform: scale(1.08);
+}
+.trending .container .row .col .card:hover .card-body .card-title {
+  color: #EB662B;
+}
+.trending .container .row .col .card .card-body .card-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #05073C;
+  transition: 0.4s ease-in-out;
+}
+.trending .container .row .col .card .card-body p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #05073C;
+}
+
+.tourz .container .row {
+  margin-top: 40px;
+}
+.tourz .container .row .col-md-3 h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #05073C;
+  margin-top: 30px;
+}
+.tourz .container .row .col-md-3 p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #05073C;
+}
+
+.featuredTrips {
+  background: rgba(235, 102, 43, 0.0509803922);
+}
+.featuredTrips .container .title-sec {
+  padding: 10px 0;
+}
+.featuredTrips .container .row {
+  margin-top: 20px;
+}
+.featuredTrips .container .row .col .card {
+  border: 1px solid #E7E6E6;
+  border-radius: 12px;
+  transition: 0.5s ease-in-out;
+}
+.featuredTrips .container .row .col .card:hover {
+  transform: scale(1.09);
+}
+.featuredTrips .container .row .col .card:hover .card-body .card-title {
+  color: #EB662B;
+  transition: 0.4s ease-in-out;
+}
+.featuredTrips .container .row .col .card .card-img-overlay {
+  position: relative;
+  padding: 0;
+}
+.featuredTrips .container .row .col .card .card-img-overlay .sendIcon {
+  width: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  right: 15px;
+  bottom: -15px;
+}
+.featuredTrips .container .row .col .card .card-body p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #717171;
+}
+.featuredTrips .container .row .col .card .card-body .card-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #05073C;
+  transition: 0.4s ease-in-out;
+}
+.featuredTrips .container .row .col .card .card-body .card-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #05073C;
+}
+.featuredTrips .container .row .col .card .card-body .card-text .icon {
+  margin-right: 5px;
+}
+.featuredTrips .container .row .col .card .card-body .card-footer {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.featuredTrips .container .row .col .card .card-body .card-footer .icon {
+  margin-right: 5px;
+}
+.featuredTrips .container .row .col .card .card-body .card-footer .lhs {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #05073C;
+  text-align: right;
+}
+.featuredTrips .container .row .col .card .card-body .card-footer .rhs {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #05073C;
+}
+.featuredTrips .container .row .col .card .card-body .card-footer .rhs span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #05073C;
+}
+
+.trendingDestinations {
+  background: #05073C;
+}
+.trendingDestinations .container .title-sec h2 {
+  color: #ffffff;
+}
+.trendingDestinations .container .title-sec a {
+  color: #ffffff;
+}
+.trendingDestinations .container .row {
+  margin-top: 20px;
+}
+.trendingDestinations .container .row .col .card {
+  background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+  transition: 0.4s ease-in-out;
+}
+.trendingDestinations .container .row .col .card:hover {
+  background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+  transform: translateY(20px);
+}
+.trendingDestinations .container .row .col .card:hover img {
+  opacity: 50%;
+  transition: 0.4s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trendingDestinations .container .row .col .card:hover .card-img-overlay {
+  transform: translateY(-40px);
+  transition: 0.5s;
+}
+.trendingDestinations .container .row .col .card img {
+  opacity: 90%;
+  transition: 0.4s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trendingDestinations .container .row .col .card .card-img-overlay {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+.trendingDestinations .container .row .col .card .card-img-overlay .text {
+  position: absolute;
+}
+.trendingDestinations .container .row .col .card .card-img-overlay .text h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffff;
+}
+.trendingDestinations .container .row .col .card .card-img-overlay .text p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.reviews {
+  background: #FBFBFB;
+}
+.reviews .container .content {
+  text-align: center;
+  gap: 40px;
+}
+.reviews .container .content .row {
+  max-width: 850px;
+}
+.reviews .container .content .row .review {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #05073C;
+}
+.reviews .container .content .row .reviewBy {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #05073C;
+  margin: 0;
+}
+.reviews .container .content .row .post {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #05073C;
+  margin: 0;
+}
+.reviews .container .content .customers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.reviews .container .content .customers .iconDiv {
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: 0.5s ease-in-out;
+}
+.reviews .container .content .customers .iconDiv:hover {
+  border: 2px solid #EB662B;
+}
+
+.travelArticles .container .row {
+  margin-top: 45px;
+}
+.travelArticles .container .row .col .card {
+  border: none;
+  transition: 0.5s ease;
+}
+.travelArticles .container .row .col .card:hover {
+  transform: scale(1.07);
+}
+.travelArticles .container .row .col .card:hover .card-body .card-title {
+  color: #EB662B;
+  transition: 0.4s ease-in-out;
+}
+.travelArticles .container .row .col .card .card-img-overlay .label {
+  width: 60px;
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0 10px;
+}
+.travelArticles .container .row .col .card .card-img-overlay .label p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #05073C;
+}
+.travelArticles .container .row .col .card .card-body .card-text span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #05073C;
+  padding: 4px 0;
+}
+.travelArticles .container .row .col .card .card-body .card-text .date {
+  border-right: 1px solid #E7E6E6;
+  padding-right: 10px;
+}
+.travelArticles .container .row .col .card .card-body .card-text .author {
+  padding-left: 10px;
+}
+.travelArticles .container .row .col .card .card-body .card-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #05073C;
+  transition: 0.4s ease-in-out;
+}
+
+.offer {
+  background-image: url("../images/offer_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+}
+.offer .container .row img {
+  display: none;
+}
+.offer .container .row .content {
+  display: flex;
+  flex-direction: column;
+}
+.offer .container .row .content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #ffffff;
+}
+.offer .container .row .content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+}
+.offer .container .row .content .subscribe-info {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 30px;
+}
+.offer .container .row .content .subscribe {
+  display: flex;
+  gap: 10px;
+}
+.offer .container .row .content .subscribe input {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+.offer .container .row .content .subscribe input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #757575;
+}
+.offer .container .row .content .subscribe input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #757575;
+}
+.offer .container .row .content .subscribe input:focus {
+  border: none;
+  outline: none;
+}
+.offer .container .row .content .subscribe button {
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #4A43C4;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+footer {
+  background: #05073C;
+}
+footer .divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.1490196078);
+}
+footer .container .footer-top {
+  border-bottom: 1px solid rgba(235, 102, 43, 0.1490196078);
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 40px 0;
+}
+footer .container .footer-top h4 {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 37px;
+  color: #ffffff;
+}
+footer .container .footer-top h4 .fa-phone {
+  margin-right: 10px;
+}
+footer .container .footer-top .followUs p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #ffffff;
+  gap: 10px;
+}
+footer .container .footer-top .followUs p a:hover {
+  transform: scale(1.4);
+  transition: 0.4s ease-in-out;
+}
+footer .container .footer-middle {
+  padding: 40px 0;
+}
+footer .container .footer-middle h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffff;
+}
+footer .container .footer-middle a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: left;
+}
+footer .container .footer-middle address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+}
+footer .container .footer-middle p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+}
+footer .container .footer-middle ul {
+  padding: 0;
+}
+footer .container .footer-middle .news .newsletter {
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  display: flex;
+  padding: 7px 20px;
+  margin-bottom: 20px;
+}
+footer .container .footer-middle .news .newsletter input {
+  max-width: 80%;
+  border: none;
+}
+footer .container .footer-middle .news .newsletter input::-moz-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #757575;
+  outline: none;
+  border: none;
+}
+footer .container .footer-middle .news .newsletter input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #757575;
+  outline: none;
+  border: none;
+}
+footer .container .footer-middle .news .newsletter input:focus {
+  outline: none;
+  border: none;
+}
+footer .container .footer-middle .news .newsletter .btn {
+  background: #ffffff;
+}
+footer .container .footer-bottom {
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+footer .container .footer-bottom h6 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+}
+footer .container .footer-bottom .paymentImg {
+  gap: 3px;
+}
+
+@media only screen and (max-width: 1200px) {
+  header .container nav .container-fluid .links {
+    justify-content: space-around;
+  }
+  header .container nav .container-fluid .links .lhs {
+    gap: 5px;
+  }
+  header .container nav .container-fluid .links .rhs {
+    gap: 5px;
+  }
+  footer .container .footer-middle .row .news .newsletter {
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .container nav .container-fluid .links {
+    background: rgba(239, 216, 201, 0.98);
+    position: absolute;
+    z-index: 999;
+    top: 80px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  header .container nav .container-fluid .links .rhs .nav-item .dropdown .dropdown-menu {
+    background: rgba(239, 216, 201, 0.98);
+  }
+  header .container .headerBody .featureList {
+    border-radius: 20px !important;
+  }
+  header .container .headerBody .featureList form .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header .container .headerBody .featureList form .row .search {
+    padding: 8px 20px;
+  }
+  header .container .headerBody .featureList form .row .form-group {
+    max-width: 600px;
+  }
+  .offer {
+    background-position: left;
+  }
+  .offer .container .row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .offer .container .row img {
+    display: flex;
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .container .headerBody h1 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+  .offer {
+    background-position: left;
+  }
+  .offer .container .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .offer .container .row img {
+    display: flex;
+    max-width: 500px;
+  }
+  .offer .container .row .content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .offer .container .row .content .subscribe {
+    margin: 0px auto;
+    margin-top: 10px;
+  }
+  .travelArticles .container .row {
+    text-align: center;
+  }
+  .travelArticles .container .row .col .card .card-img-top .label {
+    left: 40px;
+  }
+  .offer .container .row .content h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .offer .container .row .content .subscribe-info {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  footer .container .footer-middle .row .news .newsletter input {
+    padding: 10px 20px;
+    border-radius: 12px;
+  }
+  footer .container .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .container .headerBody h1 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .trending .container .title-sec h2 {
+    max-width: 300px;
+  }
+  .trending .container .row {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .featuredTrips .container .row .col .card:hover {
+    transform: none;
+  }
+  .featuredTrips .container .row .col .card .card-img-top img {
+    width: 100%;
+  }
+  .featuredTrips .container .row .col .card .card-img-top .sendIconDiv {
+    font-size: 32px;
+    width: 50px;
+    bottom: -20px;
+  }
+  .trendingDestinations .container .title-sec h2 {
+    max-width: 300px;
+  }
+  .travelArticles .container .row {
+    padding: 0 20px;
+  }
+  .offer .container .row .content .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+  .offer .container .row .content .subscribe button {
+    max-width: 100px;
+  }
+  footer .container .footer-middle .row .news .newsletter {
+    flex-direction: column;
+    gap: 10px;
+    background: #05073C;
+    align-items: center;
+  }
+  footer .container .footer-middle .row .news .newsletter input::-moz-placeholder {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  footer .container .footer-middle .row .news .newsletter input::placeholder {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}/*# sourceMappingURL=index.css.map */
